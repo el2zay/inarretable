@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="bg-gray-800">
+<head>
+    <!-- Quelques trucs -->
+    <title>JE SUIS INARRETABLE</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link href="https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherContent%2Fstyle.css?alt=media" rel="stylesheet">
+
+    <!-- Script -->
+    <script>
+        window.onload = function() { 
+            var text = document.getElementById("text");
+            
+            setInterval(async () => {
+                text.insertAdjacentHTML("afterbegin",`<h1 class="text-gray-100 text-4xl">Je suis <b>innarrêtable</b></h1>`)
+            }, -0)
+        }
+    </script>
+</head>
+<body class="h-screen flex items-center justify-center text-center">
+    <div id="text"></div>
+</body>
+</html>
