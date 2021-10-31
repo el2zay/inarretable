@@ -1,3 +1,3 @@
-while true{
-print ("JE SUIS INNARÉTABLE")
+while true {
+	print("JE SUIS INNARÉTABLE")
 }
