@@ -8,19 +8,45 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link href="https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherContent%2Fstyle.css?alt=media" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css"/>
 
     <!-- Script -->
     <script>
         window.onload = function() { 
             var text = document.getElementById("text");
+            var chat = document.getElementById("chat");
             
-            setInterval(async () => {
+            var addText = setInterval(async () => {
                 text.insertAdjacentHTML("afterbegin",`<h1 class="text-gray-100 text-4xl">Je suis <b>innarrêtable</b></h1>`)
-            }, -0)
+            }, 120)
+
+			var addMessage = setInterval(async () => {
+                chat.insertAdjacentHTML("beforeend",`<div class="max-w-md bg-white text-gray-700 p-2 self-start my-2 rounded-md shadow mr-3">${["Oui","Tout à fait","Entièrement","Je le suis","C'est en effet le cas","Je n'en doute pas une seule seconde","Je suis inarrêtable."][Math.floor(Math.random() * 7)]}.</div>`)
+
+				setTimeout(function(){
+					chat.insertAdjacentHTML("beforeend",`<div class="max-w-md bg-green-500 text-white p-2 self-end my-2 rounded-md shadow ml-3">Sûr ?</div>`)
+				}, 1250)
+            }, 2500)
         }
     </script>
 </head>
 <body class="h-screen flex items-center justify-center text-center">
     <div id="text"></div>
+	
+	<div class="fixed bottom-0 right-0 flex flex-col items-end ml-6 w-full">
+		<div class="chat-modal show mr-5 flex flex-col mb-5 shadow-lg sm:w-1/2 md:w-1/3 lg:w-1/4">
+			<div class="flex justify-between items-center text-white p-2 bg-green-500 border shadow-lg mr-5 w-full">
+				<div class="flex items-center"><img src="https://cdn.discordapp.com/avatars/809344905674489866/f5d8ed6423457ac6741f069e52d68235.webp?size=512" alt="picture" class="rounded-full w-8 h-8 mr-1">
+					<h2 class="font-semibold tracking-wider">Elbot</h2>
+					<h3>&nbsp;-&nbsp;Support et botte</h3>
+				</div>
+				<div class="flex items-center justify-center"><small class="mr-1">En ligne</small></div>
+			</div>
+			<div class="flex flex-col bg-gray-200 px-2 chat-services max-h-96 overflow-auto" id="chat">
+				<div class="max-w-md bg-green-500 text-white p-2 self-end my-2 rounded-md shadow ml-3">Tu es inarrêtable ?</div>
+			</div>
+		</div>
+		<div class="show-chat hidden mx-10 mb-6 mt-4 text-green-500 hover:text-green-600 flex justify-center items-center cursor-pointer "><span class="w-12 h-20" style="font-size: 5em;"><i class="fal fa-comment-dots"></i></span></div>
+	</div>
 </body>
 </html>
