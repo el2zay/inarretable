@@ -20,3 +20,6 @@ Inarrêtable, est **INARRETABLE** et existe avec pleins de language
 * [R](https://github.com/el2zay/innaretable/blob/main/main.r)
 * [Ruby](https://github.com/el2zay/innaretable/blob/main/main.ruby)
 * [Swift](https://github.com/el2zay/innaretable/blob/main/main.swift)
+
+
+Innarêtable est aussi disponible en .exe dans les relases si vous n'avez aucun de ces langages.
