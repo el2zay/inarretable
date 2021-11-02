@@ -14,7 +14,7 @@ Inarrêtable, est **INARRETABLE** et existe avec pleins de language
 * [Julia](https://github.com/el2zay/innaretable/blob/main/main.jl)
 * [JavaScript](https://github.com/el2zay/innaretable/blob/main/main.js)
 * [Lua](https://github.com/el2zay/innaretable/blob/main/main.lua)
-* [M](https://github.com/el2zay/innaretable/blob/main/main.m)
+* [Objective C](https://github.com/el2zay/innaretable/blob/main/main.m)
 * [Perl](https://github.com/el2zay/innaretable/blob/main/main.pl)
 * [Python](https://github.com/el2zay/innaretable/blob/main/main.py)
 * [R](https://github.com/el2zay/innaretable/blob/main/main.r)
