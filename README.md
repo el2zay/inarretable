@@ -22,4 +22,4 @@ Inarrêtable, est **INARRETABLE** et existe avec pleins de language
 * [Swift](https://github.com/el2zay/innaretable/blob/main/main.swift)
 
 
-Innarêtable est aussi disponible en .exe dans les relases si vous n'avez aucun de ces langages.
+Innarêtable est aussi disponible en .exe (pour Windows) et en executable Unix (pour macOS et Linux) dans les relases si vous n'avez aucun de ces langages.
