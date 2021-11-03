@@ -1,3 +1,3 @@
 while TRUE
-    puts("JE SUIS INNARÉTABLE")
+    puts("JE SUIS INNARÊTABLE")
 end
