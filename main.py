@@ -1,2 +1,2 @@
 while True:
-  print("JE SUIS INNARETABLE")
+  print("JE SUIS INNARÊTABLE")
