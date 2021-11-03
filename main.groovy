@@ -1,3 +1,3 @@
 while (true){
-    print("JE SUIS INNARÉTABLE\n")
+    print("JE SUIS INNARÊTABLE\n")
 }
