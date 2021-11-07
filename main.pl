@@ -1,3 +1,3 @@
 while (true){
-print("JE SUIS INNARÊTABLE")
+print("JE SUIS INARRÊTABLE")
 }
