@@ -1,3 +1,3 @@
 while (true){
-  console.log("JE SUIS INNARÊTABLE")
+  console.log("JE SUIS INARRÊTABLE")
 }
