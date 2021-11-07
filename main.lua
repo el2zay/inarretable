@@ -1,4 +1,4 @@
 while(true)
     do
-   print("JE SUIS INNARÊTABLE")
+   print("JE SUIS INARRÊTABLE")
 end
