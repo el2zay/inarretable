@@ -2,7 +2,7 @@
 
 [![Listes des inarrêtables](https://us-east-1.tixte.net/uploads/images.johanstickman.com/inarr%C3%AAtable.png)](https://github-repo-viewer.johanstickman.com/view/el2zay/innaretable/)
 
-Inarrêtable, est **INARRETABLE** et existe avec pleins de language
+Inarrêtable, est **INARRÊTABLE** et existe avec pleins de language
 
 ### Listes des inarrêtables
 15 langages pour l'instant:
