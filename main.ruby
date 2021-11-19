@@ -1,3 +1,3 @@
-while TRUE
+while true
     puts("JE SUIS INARRÊTABLE")
 end
