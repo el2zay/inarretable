@@ -5,7 +5,7 @@
 Inarrêtable, est **INARRÊTABLE** et existe avec pleins de language
 
 ### Listes des inarrêtables
-15 langages pour l'instant:
+15 langages pour l'instant :
 * [Site](https://el2zay.is-a.dev/innaretable/) (pas celui dans le screen du haut)
 * [C++](https://github.com/el2zay/innaretable/blob/main/main.cpp)
 * [Dart](https://github.com/el2zay/innaretable/blob/main/main.dart)
@@ -22,4 +22,4 @@ Inarrêtable, est **INARRÊTABLE** et existe avec pleins de language
 * [Swift](https://github.com/el2zay/innaretable/blob/main/main.swift)
 
 
-Inarrêtable est aussi disponible en .exe (pour Windows) et en executable Unix (pour macOS et Linux) dans les relases si vous n'avez aucun de ces langages.
+Inarrêtable est aussi disponible en .exe (pour Windows) et en exécutable Unix (pour macOS/Linux) dans les releases.
