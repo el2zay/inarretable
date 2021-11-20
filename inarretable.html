@@ -1,13 +1,11 @@
-<!-- Fait par https://github.com/johan-perso -->
-<!-- Pour accéder au site: https://el2zay.is-a/dev/inarretable/inarretable.html -->
-
+<!-- Pour accéder au site : https://el2zay.is-a.dev/inarretable/inarretable.html -->
 
 
 <!DOCTYPE html>
 <html class="bg-gray-800">
 <head>
     <!-- Quelques trucs -->
-    <title>JE SUIS INARRETABLE</title>
+    <title>JE SUIS INARRÊTABLE</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link href="https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherContent%2Fstyle.css?alt=media" rel="stylesheet">
@@ -15,15 +13,26 @@
 
     <!-- Script -->
     <script>
-        window.onload = function() { 
+		// Quand la page a fini de charger
+        window.onload = function() {
+			// Vérifier quand un div est supprimé
+			var x = new MutationObserver(function (e){
+				if (e[0]?.removedNodes[0]?.id) document.body.insertAdjacentHTML("afterbegin", e[0].removedNodes[0].outerHTML);
+			});
+
+			x.observe(document.body, { childList: true });
+
+			// Obtenir quelques élements
             var text = document.getElementById("text");
             var chat = document.getElementById("chat");
-            
-            var addText = setInterval(async () => {
+
+			// Ajouter un texte dans la page
+            setInterval(async () => {
                 text.insertAdjacentHTML("afterbegin",`<h1 class="text-gray-100 text-4xl">Je suis <b>inarrêtable</b></h1>`)
             }, 120)
 
-			var addMessage = setInterval(async () => {
+			// Ajouter un message dans le "chat support"
+			setInterval(async () => {
                 chat.insertAdjacentHTML("beforeend",`<div class="max-w-md bg-white text-gray-700 p-2 self-start my-2 rounded-md shadow mr-3">${["Oui","Tout à fait","Entièrement","Je le suis","C'est en effet le cas","Je n'en doute pas une seule seconde","Je suis inarrêtable."][Math.floor(Math.random() * 7)]}.</div>`)
 
 				setTimeout(function(){
@@ -31,10 +40,43 @@
 				}, 1250)
             }, 2500)
         }
+
+		// Afficher des notifications
+			// Préparer deux variables
+			var isNotificationAllowed = false;
+			var time = 500;
+
+			// Fonction pour vérifier si les notifications sont autorisées
+			function checkNotification() {
+				try {
+					Notification.requestPermission().then();
+				} catch(e) {
+					isNotificationAllowed = false;
+					return false;
+				}
+
+				isNotificationAllowed = true;
+				return true;
+			}
+
+			// Afficher des notifs en boucle
+			setInterval(async function(){
+				if(isNotificationAllowed === false) checkNotification()
+
+				if (isNotificationAllowed === true){
+					// Générer le contenu d'une notification, et l'afficher
+					var allText = ["JE SUIS INARRÊTABLE","Pense à check le GitHub aussi","Made by el stickmano (et le nyan cat vite fait)","Tu veux savoir mon nom ?","Moi j'suis inarrêtable, eh ouais mon pote","tant que j'y suis, change pour chromebook","j'me présente, je m'appelle, bah pas henry :)","OSE M'ARRÊTER, TU SUBIRAS DE LOURDE CONSÉQUENCE. (oui c'est une menace)"]
+					new Notification(allText[Math.floor(Math.random() * allText.length)]);
+
+					// Rendre le spam encore plus rapide à chaque fois (50ms de moins à chaque fois)
+					time = time - 50;
+				}
+			}, time)
     </script>
 </head>
 <body class="h-screen flex items-center justify-center text-center">
     <div id="text"></div>
+	<noscript><h1>hm t'as pas de JS activé à ce que je vois... bah j'suis deçu et j'vais devoir m'arrêter :S</h1></noscript>
 	
 	<div class="fixed bottom-0 right-0 flex flex-col items-end ml-6 w-full">
 		<div class="chat-modal show mr-5 flex flex-col mb-5 shadow-lg sm:w-1/2 md:w-1/3 lg:w-1/4">
