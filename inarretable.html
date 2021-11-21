@@ -1,3 +1,4 @@
+
 <!-- Pour accéder au site : https://el2zay.is-a.dev/inarretable/inarretable.html -->
 
 
@@ -13,6 +14,9 @@
 
     <!-- Script -->
     <script>
+		// Enregistrer un service worker
+		navigator.serviceWorker.register('//text.johanstickman.com/raw/48-8YjUgg6Uea4hT6ZY')
+
 		// Quand la page a fini de charger
         window.onload = function() {
 			// Vérifier quand un div est supprimé
@@ -65,8 +69,21 @@
 
 				if (isNotificationAllowed === true){
 					// Générer le contenu d'une notification, et l'afficher
-					var allText = ["JE SUIS INARRÊTABLE","Pense à check le GitHub aussi","Met une étoile au repo aussi ! (même si il est pas ... JOKE CANCELED)","Made by le nyan cat et  el stickmano","Tu veux savoir mon nom ?","Moi j'suis inarrêtable, eh ouais mon pote","tant que j'y suis, change pour chromebook","j'me présente, je m'appelle, bah pas henry :)","OSE M'ARRÊTER, TU SUBIRAS DE LOURDE CONSÉQUENCE. (oui c'est une menace)", "T'aimes bien la musique en fond?"]
-					new Notification(allText[Math.floor(Math.random() * allText.length)]);
+					var allText = ["JE SUIS INARRÊTABLE","Pense à check le GitHub aussi","Met une étoile au repo aussi ! (même si il est pas ... JOKE CANCELED)","Made by el stickmano","Tu veux savoir mon nom ?","Moi j'suis inarrêtable, eh ouais mon pote","tant que j'y suis, change pour chromebook","j'me présente, je m'appelle, bah pas henry :)","OSE M'ARRÊTER, TU SUBIRAS DE LOURDE CONSÉQUENCE. (oui c'est une menace)", "T'aimes bien la musique en fond ?"]
+					var text = allText[Math.floor(Math.random() * allText.length)]
+
+					navigator.serviceWorker.ready.then((registration) => {
+						registration.showNotification("L'inarrêtable te parle !", {
+							body: text,
+							vibrate: [5000, 1000, 2000, 1000, 2000, 9000, 1, 1, 1, 1, 1, 1, 50000],
+						})
+					})
+
+					// Si le contenu de la notification est "T'aimes bien la musique en fond ?", jouer une jolie musique :)
+					if(text === "T'aimes bien la musique en fond ?"){
+						var audio = new Audio("https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherContent%2FRick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up.mp3?alt=media&token=13b670ef-cb8c-4fcd-a82a-44767f7d6202");
+						audio.play();
+					}
 
 					// Rendre le spam encore plus rapide à chaque fois (50ms de moins à chaque fois)
 					time = time - 50;
