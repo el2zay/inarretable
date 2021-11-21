@@ -67,7 +67,7 @@
 				if(isNotificationAllowed === false && navigator.serviceWorker) checkNotification()
 
 				if(isNotificationAllowed === true && navigator.serviceWorker) {
-					navigator.serviceWorker.register("/web/sw-notif.js").catch(() => {
+					navigator.serviceWorker.register("web/sw-notif.js").catch(() => {
 						console.error("Impossible d'afficher des notifications via le service worker")
 					});
 				}
