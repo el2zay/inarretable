@@ -23,4 +23,7 @@ Inarrêtable, est **INARRÊTABLE** et existe avec pleins de language
 * [Swift](https://github.com/el2zay/innaretable/blob/main/main.swift)
 
 
-Inarrêtable est aussi disponible en .exe (pour Windows) et en exécutable Unix (pour macOS/Linux) dans les releases.
+Inarrêtable est aussi disponible en .exe (pour Windows) et en exécutable Unix (pour macOS/et bientôt Linux) dans les releases.
+
+**Envie de proposer un nouveau langage?**
+Allez sur le site de [el2zay](https://github.com/el2zay/innaretable/blob/main/main.swift) et choisissez la messagerie sur laquelle vous souhaitez me contacter.
