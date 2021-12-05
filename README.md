@@ -5,13 +5,14 @@
 Inarrêtable, est **INARRÊTABLE** et existe avec pleins de language
 
 ### Listes des inarrêtables
-16 langages pour l'instant :
+17 langages pour l'instant :
 * [Site](https://el2zay.is-a.dev/inarretable/inarretable.html) (pas celui dans le screen du haut)
 * [C++](https://github.com/el2zay/innaretable/blob/main/main.cpp)
 * [Dart](https://github.com/el2zay/innaretable/blob/main/main.dart)
 * [Go](https://github.com/el2zay/innaretable/blob/main/main.go)
 * [Groovy](https://github.com/el2zay/innaretable/blob/main/main.groovy)
 * [Haskell](https://github.com/el2zay/innaretable/blob/main/main.hs)
+* [Java] (https://github.com/el2zay/inarretable/blob/main/java/src/com/company/Main.java)
 * [Julia](https://github.com/el2zay/innaretable/blob/main/main.jl)
 * [JavaScript](https://github.com/el2zay/innaretable/blob/main/main.js)
 * [Lua](https://github.com/el2zay/innaretable/blob/main/main.lua)
