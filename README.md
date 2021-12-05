@@ -7,6 +7,7 @@ Inarrêtable, est **INARRÊTABLE** et existe avec pleins de language
 ### Listes des inarrêtables
 17 langages pour l'instant :
 * [Site](https://el2zay.is-a.dev/inarretable/inarretable.html) (pas celui dans le screen du haut)
+* [C](https://github.com/el2zay/innaretable/blob/main/main.c)
 * [C++](https://github.com/el2zay/innaretable/blob/main/main.cpp)
 * [Dart](https://github.com/el2zay/innaretable/blob/main/main.dart)
 * [Go](https://github.com/el2zay/innaretable/blob/main/main.go)
