@@ -1,6 +1,5 @@
 void main(){
-while (true)
-{
-    print("JE SUIS INARRÊTABLE");
-}
+	while (true){
+		print("JE SUIS INARRÊTABLE");
+	}
 }
